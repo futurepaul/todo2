@@ -1,0 +1,13 @@
+main {
+  margin: 1em;
+}
+
+header {
+  margin: 1em;
+}
+
+.columns {
+  display: grid;
+  grid: auto-flow / repeat(3, 10em);
+  margin-top: 1em;
+}
