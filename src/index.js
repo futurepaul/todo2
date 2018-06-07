@@ -1,8 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./components/App";
+import registerServiceWorker from "./registerServiceWorker";
+import { Container } from "@cerebral/react";
+import controller from "./controller";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+  <Container controller={controller}>
+    <App />
+  </Container>,
+  document.getElementById("root")
+);
 registerServiceWorker();
